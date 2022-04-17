@@ -1,0 +1,71 @@
+@import './breakpoints.style.css';
+
+.header {
+    height: 120px;
+    background-color: rgba(235, 235, 235, 1);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header__logo {
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+}
+
+.header__logo-text {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.header__space {
+    flex: auto;
+}
+
+.header__cart-items {
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.header__icon {
+    width: 51px;
+    height: 51px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 1em;
+    flex: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.header__summ {
+    position: absolute;
+    bottom: -1em;
+    right: 25px;
+    color: white;
+    background-color: red;
+    text-align: end;
+    padding: 0.1em 0.5em;
+    border-radius: 0.5em;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.header__icon img {
+    vertical-align: bottom;
+}
+
+.main-list {
+    --item-height: 140px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1em;
+    margin-top: calc(120px + 3em);
+}

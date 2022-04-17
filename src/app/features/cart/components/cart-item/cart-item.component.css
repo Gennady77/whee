@@ -12,6 +12,7 @@
 .list-item__addcart,  .list-item__remove {
     display: block;
     height: 46px;
+    width: 190px;
     background-color: #fff;
     border: 1px solid black;
     text-transform: uppercase;

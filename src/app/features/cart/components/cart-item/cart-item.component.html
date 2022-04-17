@@ -1,21 +1,11 @@
-<ng-container>
-    <div class="list-item__avatar">
-        <img src="assets/icons/{{data.avatar}}" />
-    </div>
-    <div class="list-item__info">
-        <div class="list-item__title">{{data.title}}</div>
-        <div class="list-item__description">{{data.description}}</div>
-    </div>
-    <div class="list-item__separator"></div>
-    <div class="list-item__logic">
-        <div class="list-item__price">{{data.price}}€</div>
-        <div class="list-item__editor" *ngIf="added">
-            <div class="list-item__quantity">
-                <input type="number" min="0" [formControl]="quantityInput" />
-                <div *ngIf="quantityInput.invalid && (quantityInput.dirty || quantityInput.touched)" class="list-item__error">Value should be a positive number</div>
-            </div>
-            <button (click)="removeFromCard(data.id)" class="list-item__remove">remove</button>
+<div class="list-item__logic">
+    <div class="list-item__price">{{price}}€</div>
+    <div class="list-item__editor" *ngIf="added">
+        <div class="list-item__quantity">
+            <input type="number" min="0" [formControl]="quantityInput" />
+            <div *ngIf="quantityInput.invalid && (quantityInput.dirty || quantityInput.touched)" class="list-item__error">Value should be a positive number</div>
         </div>
-        <button *ngIf="!added" (click)="addToCart(data.id)" class="list-item__addcart">add to cart</button>
+        <button (click)="removeFromCard(id)" class="list-item__remove">remove</button>
     </div>
-</ng-container>
+    <button *ngIf="!added" (click)="addToCart(id)" class="list-item__addcart">add to cart</button>
+</div>

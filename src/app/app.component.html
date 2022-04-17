@@ -1,15 +1,4 @@
-<div class="header">
-  <div class="header__logo">whee</div>
-  <div class="header__logo-text">The most definitive shape store in the world</div>
-  <div class="header__space"></div>
-  <div class="header__cart-items">{{ $quantity | async | cart }} in cart</div>
-  <div class="header__icon">
-    <a [routerLink]="['/cart']">
-      <img src="assets/icons/cart-icon.png" />
-    </a>
-    <div *ngIf="$summ | async" class="header__summ">{{ $summ | async }}€</div>
-  </div>
-</div>
+<app-header></app-header>
 <div class="main-list">
   <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,5 @@
+<div class="cart-items">{{ $quantity | async | cart }} in cart</div>
+<div class="cart-icon">
+    <img src="assets/icons/cart-icon.png" />
+    <div *ngIf="$summ | async" class="cart-summ">{{ $summ | async }}€</div>
+</div>

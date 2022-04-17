@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    align-items: center;
+}
+
+.cart-items {
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.cart-icon {
+    width: 51px;
+    height: 51px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 1em;
+    flex: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.cart-icon img {
+    vertical-align: bottom;
+}
+
+.cart-summ {
+    position: absolute;
+    bottom: -1em;
+    right: 25px;
+    color: white;
+    background-color: red;
+    text-align: end;
+    padding: 0.1em 0.5em;
+    border-radius: 0.5em;
+    vertical-align: middle;
+    font-weight: bold;
+}
